@@ -1,0 +1,62 @@
+## Basic UI Settings
+set linenumbers
+set mouse
+set tabsize 4
+set tabstospaces
+set constantshow
+set minibar
+set indicator
+set showcursor
+
+## Colors (Catppuccin Mocha)
+set titlecolor brightmagenta,black
+set statuscolor brightmagenta,black
+set errorcolor brightwhite,red
+set selectedcolor black,magenta
+set stripecolor ,black
+set numbercolor magenta
+set keycolor brightmagenta
+set functioncolor magenta
+set scrollercolor brightmagenta
+
+## Include syntax highlighting definitions
+include "/usr/share/nano/*.nanorc"
+
+## Custom syntax highlighting colors
+syntax "default"
+color brightcyan ".*"
+color brightmagenta "^.*$"
+color brightwhite,magenta "^[[:space:]]*[[:alpha:]]+[[:space:]]*:"
+color brightwhite,magenta "^[[:space:]]*[[:alpha:]]+[[:space:]]*="
+
+## Syntax Highlighting for common file types
+# Comments
+color brightblue "^[[:space:]]*#.*"
+color brightblue "//.*"
+color brightblue start="/\*" end="\*/"
+
+# Function definitions
+color brightmagenta "^[[:space:]]*[A-Za-z0-9_]+[[:space:]]*\([^)]*\)[[:space:]]*\{"
+color brightmagenta "\<(function|def)\>[[:space:]]+[A-Za-z0-9_]+[[:space:]]*\("
+
+# Variables
+color cyan "=[[:space:]]*[-+/*0-9A-Za-z_{}$\"'.]+"
+color cyan "\$[A-Za-z0-9_]+"
+color cyan "\<(var|let|const)\>[[:space:]]+[A-Za-z0-9_]+"
+
+# String values
+color green ""(\\.|[^"])*""
+color green "'(\\.|[^'])*'"
+
+# Numbers
+color yellow "\<[-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?\>)"
+
+# Keywords
+color brightcyan "\<(if|else|for|while|do|switch|case|break|continue|return)\>"
+
+# Special characters
+color red "[-+/*=<>!&|^~?:%]"
+color red "[,:;]"
+color red "[\(\)\{\}\[\]]"
+
+set mouse
