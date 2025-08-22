@@ -4,4 +4,5 @@ tmux
 nanoarc
 
 
-![image](https://github.com/user-attachments/assets/e7b73993-feb7-4e03-a75d-a9a51f447987)
+<img width="1907" height="1009" alt="image" src="https://github.com/user-attachments/assets/a7ae0b19-a6ec-452f-9885-4630a0825709" />
+
