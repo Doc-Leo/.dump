@@ -1,4 +1,4 @@
-# Nothing else just conf files
+# Nothing but dot files
 
 - tmux
 - kitty-terminal
