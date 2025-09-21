@@ -1,7 +1,8 @@
 # Nothing else just conf files
-tmux
 
-nanoarc
+- tmux
+- kitty-terminal
+- nano
 
 
 <img width="1907" height="1009" alt="image" src="https://github.com/user-attachments/assets/a7ae0b19-a6ec-452f-9885-4630a0825709" />
